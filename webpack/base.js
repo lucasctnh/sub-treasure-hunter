@@ -23,7 +23,20 @@ module.exports = {
         test: /\.(gif|png|jpe?g|svg|xml)$/i,
         use: "file-loader"
       }
-    ]
+	],
+	loaders: [
+	  {
+		test: /\.png$/,
+		loader: 'file?name=assets/icons/[name].[hash].[ext]'
+	  },
+	  {
+		test: /\.html$/,
+		loader: 'html',
+		query: {
+		  interpolate: 'require'
+		}
+	  }
+	]
   },
   plugins: [
     new CleanWebpackPlugin({
@@ -34,7 +47,8 @@ module.exports = {
       WEBGL_RENDERER: JSON.stringify(true)
     }),
     new HtmlWebpackPlugin({
-      template: "./index.html"
+	  template: "./index.html",
+	  inject: 'head'
 	})
   ]
 };
