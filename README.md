@@ -17,7 +17,7 @@ A demo can be found [here](https://treasure-hunter-game.herokuapp.com/).
 | `npm install` | Install project dependencies |
 | `npm run dev` | Build project and open web server running project |
 | `npm run build` | Builds code bundle with production settings (minification, uglification, etc..) |
-| `npm start` | Start express with pre-built project |
+| `npm start` | Start express server with pre-built project |
 
 ## Writing Code
 
