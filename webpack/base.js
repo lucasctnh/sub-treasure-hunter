@@ -22,19 +22,6 @@ module.exports = {
       {
         test: /\.(gif|png|jpe?g|svg|xml)$/i,
         use: "file-loader"
-	  },
-	  {
-		test: /\.png$/,
-		loader: 'file-loader',
-		options: {
-		  name(resourcePath, resourceQuery) {
-			if (process.env.NODE_ENV === 'development') {
-				return '[path][name].[ext]'
-			}
-
-			return '[contenthash].[ext]'
-		  },
-		}
 	  }
 	]
   },
@@ -48,7 +35,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
 	  template: "./index.html",
-	  inject: 'head'
+	  favicon: './src/assets/chest.png'
 	})
   ]
 };
