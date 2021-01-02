@@ -25,11 +25,14 @@ module.exports = {
 	  },
 	  {
 		test: /\.png$/,
-		loader: 'file?name=assets/icons/[name].[hash].[ext]'
+		loader: 'file-loader'
+		options: {
+		  name: '[name].[hash].[ext]'
+		}
 	  },
 	  {
 		test: /\.html$/,
-		loader: 'html',
+		loader: 'html-loader',
 		query: {
 		  interpolate: 'require'
 		}
