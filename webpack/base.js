@@ -22,9 +22,7 @@ module.exports = {
       {
         test: /\.(gif|png|jpe?g|svg|xml)$/i,
         use: "file-loader"
-      }
-	],
-	loaders: [
+	  },
 	  {
 		test: /\.png$/,
 		loader: 'file?name=assets/icons/[name].[hash].[ext]'
