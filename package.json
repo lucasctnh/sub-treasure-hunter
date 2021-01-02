@@ -1,11 +1,13 @@
 {
   "name": "sub",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple 'get the treasure' game to familiarize with Phaser framework",
   "main": "src/index.js",
   "scripts": {
     "build": "webpack --config webpack/prod.js ",
-    "start": "webpack-dev-server --config webpack/base.js"
+    "start": "node server.js",
+    "dev": "webpack-dev-server --config webpack/base.js",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "phaser": "^3.50.1",
     "phaser3-rex-plugins": "^1.1.33"
   }
