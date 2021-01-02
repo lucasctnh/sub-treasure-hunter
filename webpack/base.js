@@ -35,13 +35,6 @@ module.exports = {
 			return '[contenthash].[ext]'
 		  },
 		}
-	  },
-	  {
-		test: /\.html$/,
-		loader: 'html-loader',
-		query: {
-		  interpolate: 'require'
-		}
 	  }
 	]
   },
