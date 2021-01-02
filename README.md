@@ -15,15 +15,16 @@ A demo can be found [here](https://treasure-hunter-game.herokuapp.com/).
 | Command | Description |
 |---------|-------------|
 | `npm install` | Install project dependencies |
-| `npm start` | Build project and open web server running project |
+| `npm run dev` | Build project and open web server running project |
 | `npm run build` | Builds code bundle with production settings (minification, uglification, etc..) |
+| `npm start` | Start express with pre-built project |
 
 ## Writing Code
 
 After cloning the repo, run `npm install` from your project directory. Then, you
-can start the local development server by running `npm start`.
+can start the local development server by running `npm run dev`.
 
-After starting the development server with `npm start`, you can edit any files in the `src` folder
+After starting the development server with `npm run dev`, you can edit any files in the `src` folder
 and webpack will automatically recompile and reload your server (available at `http://localhost:8080`
 by default).
 
