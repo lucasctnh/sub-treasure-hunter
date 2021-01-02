@@ -25,9 +25,15 @@ module.exports = {
 	  },
 	  {
 		test: /\.png$/,
-		loader: 'file-loader'
+		loader: 'file-loader',
 		options: {
-		  name: '[name].[hash].[ext]'
+		  name(resourcePath, resourceQuery) {
+			if (process.env.NODE_ENV === 'development') {
+				return '[path][name].[ext]'
+			}
+
+			return '[contenthash].[ext]'
+		  },
 		}
 	  },
 	  {
