@@ -1,8 +1,10 @@
 # S.U.B - A Treasure Hunter Game
 
-This is a simple game I've made just to get familiarized with game framework
+This is a simple game I've made just to get familiarized with the game framework
 [Phaser 3](https://phaser.io/). I also did the sprites myself, which made the
 project more satisfying to do.
+
+A demo can be found [here](https://treasure-hunter-game.herokuapp.com/).
 
 ## Requirements
 
