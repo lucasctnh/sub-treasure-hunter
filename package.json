@@ -5,9 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "build": "webpack --config webpack/prod.js ",
-    "start": "node server.js",
-    "dev": "webpack-dev-server --config webpack/base.js",
-    "postinstall": "npm run build"
+    "start": "npm run build && node server.js",
+    "dev": "webpack-dev-server --config webpack/base.js"
   },
   "repository": {
     "type": "git",
