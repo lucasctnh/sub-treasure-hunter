@@ -4,7 +4,7 @@ This is a simple game I've made just to get familiarized with the game framework
 [Phaser 3](https://phaser.io/). I also did the sprites myself, which made the
 project more satisfying to do.
 
-A demo can be found [here](https://treasure-hunter-game.herokuapp.com/).
+A demo can be found [here](https://treasure-hunter-game-sub.web.app/).
 
 ## Requirements
 
@@ -15,9 +15,9 @@ A demo can be found [here](https://treasure-hunter-game.herokuapp.com/).
 | Command | Description |
 |---------|-------------|
 | `npm install` | Install project dependencies |
-| `npm run dev` | Build project and open web server running project |
+| `npm start` | Starts project with the dev-server with development settings |
 | `npm run build` | Builds code bundle with production settings (minification, uglification, etc..) |
-| `npm start` | Start express server with pre-built project |
+| `npm run devbuild` | Builds bundle and runs dev-server with production settings |
 
 ## Writing Code
 
@@ -54,4 +54,5 @@ After you run the `npm run build` command, your code will be built into a single
 `dist/bundle.min.js` along with any other assets you project depended.
 
 If you put the contents of the `dist` folder in a publicly-accessible location (say something like `http://mycoolserver.com`),
-you should be able to open `http://mycoolserver.com/index.html` and play your game.
+you should be able to open `http://mycoolserver.com/index.html` and play your
+game. In my case, I'm using Firebase to deploy it.
