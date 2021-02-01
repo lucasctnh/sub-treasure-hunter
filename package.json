@@ -4,9 +4,10 @@
   "description": "A simple 'get the treasure' game to familiarize with Phaser framework",
   "main": "src/index.js",
   "scripts": {
-    "build": "webpack --config webpack/prod.js ",
-    "start": "node server.js",
-    "dev": "webpack-dev-server --config webpack/base.js"
+	"start": "webpack-dev-server --config webpack/base.js",
+	"build": "webpack --config webpack/prod.js ",
+	"devbuild": "npm run build & webpack-dev-server --config webpack/prod.js ",
+	"deploy": "firebase deploy"
   },
   "repository": {
     "type": "git",
