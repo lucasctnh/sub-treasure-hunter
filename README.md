@@ -1,4 +1,5 @@
 # S.U.B - A Treasure Hunter Game
+![Game Image](https://github.com/lcscout/sub-treasure-hunter/blob/main/sub_treasure.png "Game Image")
 
 This is a simple game I've made just to get familiarized with the game framework
 [Phaser 3](https://phaser.io/). I also did the sprites myself, which made the
